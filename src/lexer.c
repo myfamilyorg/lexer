@@ -3,14 +3,6 @@
 #include <sys.h>
 #include <util.h>
 
-typedef enum {
-	IDENT,
-	STRING_LITERAL,
-	CHAR_LITERAL,
-	PUNCT,
-	NUM_LITERAL
-} TokenType;
-
 static bool lexer_is_whitespace(Lexer *l) {
 	return l->stream[l->cur] == ' ' || l->stream[l->cur] == '\t' ||
 	       l->stream[l->cur] == '\r' || l->stream[l->cur] == '\n' ||
