@@ -1,0 +1,5 @@
+[crate]
+	bin = "lexer"
+[deps]
+	sys = { git = "https://github.com/myfamilyorg/sys" }
+	util = { git = "https://github.com/myfamilyorg/util" }
